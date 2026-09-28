@@ -1,0 +1,16 @@
+torch==2.9.0
+torchvision
+numpy
+opencv-python-headless
+Pillow
+matplotlib
+scipy
+scikit-image
+trimesh
+roma
+PyYAML
+tqdm
+huggingface_hub
+transformers
+gradio
+imageio-ffmpeg

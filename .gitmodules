@@ -2,7 +2,7 @@
 	path = cuda-miniconda/MocapAnything
 	url = https://github.com/DMcClarence/MocapAnything.git
 [submodule "cuda-miniconda/4DAnyone"]
-	path = cuda-miniconda/4DAnyone
+	path = 4DAnyone
 	url = https://github.com/DMcClarence/4DAnyone.git
 [submodule "cuda-miniconda/GVHMR"]
 	path = cuda-miniconda/GVHMR
