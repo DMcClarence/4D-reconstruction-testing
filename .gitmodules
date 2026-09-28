@@ -1,9 +1,9 @@
-[submodule "MocapAnything"]
-	path = MocapAnything
+[submodule "cuda-miniconda/MocapAnything"]
+	path = cuda-miniconda/MocapAnything
 	url = https://github.com/DMcClarence/MocapAnything.git
-[submodule "4DAnyone"]
+[submodule "cuda-miniconda/4DAnyone"]
 	path = 4DAnyone
 	url = https://github.com/DMcClarence/4DAnyone.git
-[submodule "GVHMR"]
-	path = GVHMR
+[submodule "cuda-miniconda/GVHMR"]
+	path = cuda-miniconda/GVHMR
 	url = https://github.com/DMcClarence/GVHMR.git
