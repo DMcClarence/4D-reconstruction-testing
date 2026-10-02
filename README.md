@@ -3,9 +3,11 @@
 ## Clone the Repository
 1. `git clone https://github.com/DMcClarence/4D-reconstruction-testing.git`
 2. `cd 4D-reconstruction-testing`
-3. `git submodule update --init --recursive 4DAnyone`
-4. `git submodule update --init GVHMR`
-5. `git submodule update --init MocapAnything`
+3. `git submodule update --init GVHMR`
+4. `git submodule update --init 4DAnyone`
+5. `cd 4DAnyone`
+6. `git submodule update --init third_party/GVHMR`
+7. `cd ..`
 
 ## Build the Image
 1. `nvidia-smi` in terminal to find Cuda Version for GPU.
@@ -15,7 +17,7 @@
 
 ## Create and Run the Container
 1. `docker volume create conda-envs`
-2. `docker run -it --gpus all --mount type=bind,src={ABSOLUTE_PATH}/4DAnyone,dst=/mnt/4DAnyone --mount type=bind,src={ABSOLUTE_PATH}/GVHMR,dst=/mnt/GVHMR --mount type=bind,src={ABSOLUTE_PATH}/MocapAnything,dst=/mnt/MocapAnything -v conda-envs:/opt/conda/envs -v "${PWD}:/workspace" cuda-miniconda:**CUDA_VERSION** /bin/bash`
+2. `docker run -it --gpus all --mount type=bind,src={ABSOLUTE_PATH}/4DAnyone,dst=/mnt/4DAnyone --mount type=bind,src={ABSOLUTE_PATH}/GVHMR,dst=/mnt/GVHMR -v conda-envs:/opt/conda/envs -v "${PWD}:/workspace" cuda-miniconda:**CUDA_VERSION** /bin/bash`
 
 ## Run Existing Container
 1. `docker start **CONTAINER_NAME_OR_ID**`
