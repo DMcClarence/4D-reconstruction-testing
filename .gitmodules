@@ -1,6 +1,6 @@
-[submodule "cuda-miniconda/4DAnyone"]
+[submodule "4DAnyone"]
 	path = 4DAnyone
 	url = https://github.com/DMcClarence/4DAnyone.git
-[submodule "cuda-miniconda/GVHMR"]
+[submodule "GVHMR"]
 	path = GVHMR
 	url = https://github.com/DMcClarence/GVHMR.git
