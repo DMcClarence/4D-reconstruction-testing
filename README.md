@@ -17,7 +17,7 @@
 
 ## Create and Run the Container
 1. `docker volume create conda-envs`
-2. `docker run -it --gpus all --mount type=bind,src={ABSOLUTE_PATH}/4DAnyone,dst=/mnt/4DAnyone --mount type=bind,src={ABSOLUTE_PATH}/GVHMR,dst=/mnt/GVHMR -v conda-envs:/opt/conda/envs -v "${PWD}:/workspace" cuda-miniconda:**CUDA_VERSION** /bin/bash`
+2. From main repo directory: `docker run -it --gpus all --mount type=bind,src=./4DAnyone,dst=/mnt/4DAnyone --mount type=bind,src=./GVHMR,dst=/mnt/GVHMR --mount type=bind,src=./inputs,dst=/mnt/inputs --mount type=bind,src=./outputs,dst=/mnt/outputs -v conda-envs:/opt/conda/envs cuda-miniconda:**CUDA_VERSION** /bin/bash`
 
 ## Run Existing Container
 1. `docker start **CONTAINER_NAME_OR_ID**`
