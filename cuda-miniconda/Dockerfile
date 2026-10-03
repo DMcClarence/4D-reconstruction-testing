@@ -55,7 +55,10 @@ RUN CUDA_MAJOR_MINOR=$(echo "${CUDA_VERSION}" | cut -d. -f1,2 | tr '.' '-') && \
 
 RUN conda config --system \
         --add envs_dirs /opt/conda/envs && \
-    conda init bash
+    conda init bash && \
+    conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main && \
+    conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+
 
 RUN echo 'source /root/.bashrc' >> /root/.bash_profile
 
