@@ -10,7 +10,10 @@ eval "$(conda shell.bash hook)"
 conda create -y -n gvhmr python=3.10
 conda activate gvhmr
 
-apt-get update && \
+apt-get update
+
+apt install -y ffmpeg
+
 apt install -y -qq aria2 && \
 aria2c --console-log-level=error -c -x 16 -s 16 \
     -k 1M https://huggingface.co/camenduru/SMPLer-X/resolve/main/SMPL_NEUTRAL.pkl \
