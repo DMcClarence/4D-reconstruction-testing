@@ -24,11 +24,9 @@
 2. `docker exec -it **CONTAINER_NAME_OR_ID** /bin/bash`
 
 ## Set up Conda Environments
-`cd /mnt/4d-reconstruction-testing`
-For 4DAnyone: `./4danyone_init.sh`
-For GVHMR: `./4danyone_init.sh`
+1. `cd /mnt/4d-reconstruction-testing`
+2. For 4DAnyone: `./4danyone_init.sh` or GVHMR: `./gvhmr_init.sh`
 
 ## Run Inference
-`conda activate **CONDA_ENV_NAME**`
-For 4DAnyone: `./4danyone.sh`
-For GVHMR: `./gvhmr.sh`
+1. `conda activate **CONDA_ENV_NAME**`
+2. For 4DAnyone: `./4danyone.sh` or GVHMR: `./gvhmr.sh`
