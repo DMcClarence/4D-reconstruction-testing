@@ -4,3 +4,6 @@
 [submodule "GVHMR"]
 	path = GVHMR
 	url = https://github.com/DMcClarence/GVHMR.git
+[submodule "inputs/caltennis"]
+	path = inputs/caltennis
+	url = https://huggingface.co/datasets/S34085068/caltennis
