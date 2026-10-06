@@ -1,0 +1,9 @@
+# Keep the WHAM integration runnable after checkout on Windows.
+wham_init.sh text eol=lf
+wham.sh text eol=lf
+wham-support/*.sh text eol=lf
+wham-support/*.py text eol=lf
+wham-support/*.txt text eol=lf
+wham-support/patches/*.patch text eol=lf
+# Patch context retains upstream whitespace; do not lint it as new source code.
+wham-support/patches/*.patch whitespace=-blank-at-eol,-blank-at-eof
