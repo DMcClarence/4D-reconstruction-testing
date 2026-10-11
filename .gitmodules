@@ -1,6 +1,3 @@
-[submodule "4DAnyone"]
-	path = 4DAnyone
-	url = https://github.com/DMcClarence/4DAnyone.git
 [submodule "GVHMR"]
 	path = GVHMR
 	url = https://github.com/DMcClarence/GVHMR.git
