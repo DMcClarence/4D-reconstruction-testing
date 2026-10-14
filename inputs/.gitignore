@@ -1,3 +1,4 @@
 # Ignore everything here execpt .gitignore
 *
+!caltennis/
 !.gitignore
