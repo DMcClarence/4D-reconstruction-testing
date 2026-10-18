@@ -1,3 +1,6 @@
 [submodule "GVHMR"]
 	path = GVHMR
 	url = https://github.com/DMcClarence/GVHMR.git
+[submodule "WHAM"]
+	path = WHAM
+	url = https://github.com/yohanshin/WHAM.git
